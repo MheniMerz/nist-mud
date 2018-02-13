@@ -262,8 +262,8 @@ public class SdnmudProvider {
 
     // RPC interface to communicate with the IDS to block flows.
     
-    this.rpcProviderRegistry.addRpcImplementation(NistFlowControllerService.class, 
-        new NistFlowControllerServiceImpl(this));
+    // this.rpcProviderRegistry.addRpcImplementation(NistFlowControllerService.class, 
+    //   new NistFlowControllerServiceImpl(this));
 
     IdsRegistrationScanner scanner = new IdsRegistrationScanner(this);
     Timer timer = new Timer();
