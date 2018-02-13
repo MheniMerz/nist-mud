@@ -228,6 +228,7 @@ public class MudFlowsInstaller {
   }
 
   private static Integer getPort(Matches matches) {
+     // BUG BUG -- I can't cast the type to the desired Type Name.
 	 LOG.info("Type " + matches.getL4().getClass().getTypeName());
 	 LOG.info(" Type1 " + matches.getL4().getImplementedInterface().getTypeName());
 	 return 123;
