@@ -157,28 +157,12 @@ public class MudFlowsInstaller {
    * 
    */
   private static List<Ipv4Address> getMatchAddresses(Matches matches) {
-
-    ArrayList<Ipv4Address> ipAddresses = new ArrayList<Ipv4Address>();
-  	org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.acldns.rev180124.Matches1 matches1 
-    		= matches.getAugmentation(org.opendaylight.yang.gen.v1.urn.ietf.params.xml.ns.yang.ietf.acldns.rev180124.Matches1.class);
-    if (matches1 != null) {
-      Host dnsName = matches1.getDstDnsname() != null ? matches1.getDstDnsname() : matches1.getSrcDnsname();
-      if (dnsName != null) {
-        // Get the domain name of the host.
-        String domainName = dnsName.getDomainName().getValue();
-        try {
-          LOG.info("domainName : " + domainName);
-          resolveDefaultDomain(ipAddresses, domainName);
-
-        } catch (UnknownHostException e) {
-          LOG.error("Unknown host  " + domainName, e);
-        }
-      }
-    }
-    return ipAddresses;
+    // BUG BUG -- I don't know what to do here to get to the L4 interface
+    return new ArrayList<Ipv4Address>();
   }
-
-  /**
+  
+  
+  /*
    * Drop packet if mud rules don't match.
    * 
    * @param mudUri
