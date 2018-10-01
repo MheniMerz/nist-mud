@@ -244,7 +244,7 @@ source projects are noted in the source files as appropriate.
 
 * The MUD Standard was primarily authored by Eliot Lear (Cisco) in the IETF OPSAWG working group.
 * SDN MUD design and implementation : M. Ranganathan <mranga@nist.gov>
-* OpenStack integration : Charif Mahmoudi  <charif.mahmoudi@nist.gov>, M'hene Merzouki <mhene.merzouki@nist.gov>
+* OpenStack integration : Charif Mahmoudi  <charif.mahmoudi@nist.gov>, Mheni Merzouki <mheni.merzouki@nist.gov>
 * Testing : Omar Ilias Elmimouni <omarilias.elmimouni@nist.gov>
 * Implementation Design Contributors : Charif Mahmoudi, Doug Montgomery
 * Project Manager Doug Montgomery <dougm@nist.gov>
